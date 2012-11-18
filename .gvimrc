@@ -2,62 +2,62 @@
 " 基本的な設定
 "--------------------
 "新しい行のインデントを現在行と同じにする
-set autoindent 
+"set autoindent 
  
 "バックアップファイルのディレクトリを指定する
-set backupdir=$HOME/vimbackup
+"set backupdir=$HOME/vimbackup
  
 "クリップボードをWindowsと連携する
-set clipboard=unnamed
+"set clipboard=unnamed
  
 "vi互換をオフする
-set nocompatible
+"set nocompatible
  
 "スワップファイル用のディレクトリを指定する
-set directory=$HOME/vimbackup
+"set directory=$HOME/vimbackup
  
 "タブの代わりに空白文字を指定する
-set expandtab
+"set expandtab
  
 "変更中のファイルでも、保存しないで他のファイルを表示する
-set hidden
+"set hidden
  
 "インクリメンタルサーチを行う
-set incsearch
+"set incsearch
  
 "行番号を表示する
 "set number
  
 "閉括弧が入力された時、対応する括弧を強調する
-set showmatch
+"set showmatch
  
 "新しい行を作った時に高度な自動インデントを行う
-set smarttab
+"set smarttab
  
 " grep検索を設定する
-set grepformat=%f:%l:%m,%f:%l%m,%f\ \ %l%m,%f
-set grepprg=grep\ -nh
+"set grepformat=%f:%l:%m,%f:%l%m,%f\ \ %l%m,%f
+"set grepprg=grep\ -nh
  
 " 検索結果のハイライトをEsc連打でクリアする
-nnoremap <ESC><ESC> :nohlsearch<CR>
+"nnoremap <ESC><ESC> :nohlsearch<CR>
 
 "----------
 " 基本的な設定
 "----------
-set showtabline=2
-set transparency=5
-set imdisable
-set guioptions-=T
-set antialias
-set tabstop=4
+"set showtabline=2
+"set transparency=5
+"set imdisable
+"set guioptions-=T
+"set antialias
+"set tabstop=4
 "set number
-set nobackup
-set visualbell t_vb=
-set nowrapscan
-set columns=100
-set lines=48
+"set nobackup
+"set visualbell t_vb=
+"set nowrapscan
+"set columns=100
+"set lines=48
 
 "----------
 " カラースキーム
 "----------
-colorscheme desert
+"colorscheme solarized
