@@ -16,6 +16,7 @@ filetype indent on
 
 " カーソル行をハイライト
 set cursorline
+
 " カレントウィンドウにのみ罫線を引く
 augroup cch
 autocmd! cch
@@ -25,6 +26,10 @@ augroup END
 :hi clear CursorLine
 :hi CursorLine gui=underline
 highlight CursorLine ctermbg=black guibg=black
+
+" ;でコマンド入力( ;と:を入れ替)
+noremap ; :
+noremap : ;
 
 " ----------------------------------------------------
 " vundle installed plugin
@@ -37,11 +42,17 @@ Bundle 'gmarik/vundle'
 " Color Scheme solarized
 Bundle 'altercation/vim-colors-solarized'
 
+" Color Scheme molokai
+Bundle  'tomasr/molokai'
+
 " sudo.vim
 Bundle 'sudo.vim'
 
 " powerline
 Bundle 'Lokaltog/vim-powerline'
+
+" NERDtree
+Bundle 'scrooloose/nerdtree'
 
 " ----------------------------------------------------
 " plugin configure
@@ -57,6 +68,13 @@ set background=dark
 " powerline configure
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_stl_path_style = 'short'
+
+" NERDtree configulation
+" デフォルトでNERDTreeを開く
+autocmd VimEnter * NERDTree ./
+
+" molokai configulation
+let g:molokai_original = 1
 
 " ----------------------------------------------------
 " set colorscheme
