@@ -6,6 +6,9 @@ set nocompatible
 " 行番号表示
 set number
 
+" バックアップを作らない
+set nobackup
+
 " シンタックスを有効
 syntax enable
 
@@ -17,6 +20,12 @@ filetype indent on
 " カーソル行をハイライト
 set cursorline
 
+" インデントをスペース4つに
+set tabstop=4
+set autoindent
+set expandtab
+set shiftwidth=4
+
 " カレントウィンドウにのみ罫線を引く
 augroup cch
 autocmd! cch
@@ -27,7 +36,7 @@ augroup END
 :hi CursorLine gui=underline
 highlight CursorLine ctermbg=black guibg=black
 
-" ;でコマンド入力( ;と:を入れ替)
+" ;でコマンド入力( ;と:を入れ替え)
 noremap ; :
 noremap : ;
 
@@ -66,8 +75,8 @@ let g:solarized_visibility='high'
 set background=dark
 
 " powerline configure
-let g:Powerline_symbols = 'fancy'
-let g:Powerline_stl_path_style = 'short'
+" let g:Powerline_symbols = 'fancy'
+" let g:Powerline_stl_path_style = 'short'
 
 " NERDtree configulation
 " デフォルトでNERDTreeを開く
