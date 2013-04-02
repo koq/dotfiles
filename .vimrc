@@ -40,6 +40,9 @@ highlight CursorLine ctermbg=black guibg=black
 noremap ; :
 noremap : ;
 
+" テキスト整形オプション，マルチバイト系を追加
+set formatoptions=lmoq          
+
 " ----------------------------------------------------
 " vundle installed plugin
 
@@ -52,7 +55,7 @@ Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 
 " Color Scheme molokai
-Bundle  'tomasr/molokai'
+"Bundle  'tomasr/molokai'
 
 " sudo.vim
 Bundle 'sudo.vim'
@@ -63,8 +66,17 @@ Bundle 'Lokaltog/vim-powerline'
 " NERDtree
 Bundle 'scrooloose/nerdtree'
 
+" fugitive.vim
+Bundle 'fugitive.vim'
+
+" evervim
+Bundle 'kakkyz81/evervim'
+
 " ----------------------------------------------------
 " plugin configure
+
+" evervim configure
+let g:evervim_devtoken='S=s277:U=22334c5:E=142ec86fa19:C=13b94d5ce1a:P=1cd:A=en-devtoken:H=119a7854b74c7b28493feabbb7e71dde'
 
 " solarized Configure
 let g:solarized_bold=1
@@ -94,4 +106,4 @@ augroup guicolorscheme
   autocmd!
     execute 'autocmd GUIEnter * colorscheme' scheme
     augroup END
-    execute 'colorscheme' scheme
+   execute 'colorscheme' scheme

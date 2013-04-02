@@ -11,13 +11,13 @@
 "set clipboard=unnamed
  
 "vi互換をオフする
-"set nocompatible
+set nocompatible
  
 "スワップファイル用のディレクトリを指定する
 "set directory=$HOME/vimbackup
  
 "タブの代わりに空白文字を指定する
-"set expandtab
+set expandtab
  
 "変更中のファイルでも、保存しないで他のファイルを表示する
 "set hidden
@@ -39,13 +39,13 @@
 "set grepprg=grep\ -nh
  
 " 検索結果のハイライトをEsc連打でクリアする
-"nnoremap <ESC><ESC> :nohlsearch<CR>
+nnoremap <ESC><ESC> :nohlsearch<CR>
 
 "----------
 " 基本的な設定
 "----------
 set showtabline=2
-set transparency=5
+set transparency=3
 set imdisable
 set guioptions-=T
 set antialias
