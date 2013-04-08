@@ -54,8 +54,11 @@ Bundle 'gmarik/vundle'
 " Color Scheme solarized
 Bundle 'altercation/vim-colors-solarized'
 
+" Color Scheme monokai
+Bundle 'sickill/vim-monokai'
+
 " Color Scheme molokai
-"Bundle  'tomasr/molokai'
+Bundle  'tomasr/molokai'
 
 " sudo.vim
 Bundle 'sudo.vim'
@@ -72,6 +75,9 @@ Bundle 'fugitive.vim'
 " evervim
 Bundle 'kakkyz81/evervim'
 
+" scrooloose / syntastic
+Bundle 'scrooloose/syntastic'
+
 " ----------------------------------------------------
 " plugin configure
 
@@ -79,12 +85,12 @@ Bundle 'kakkyz81/evervim'
 let g:evervim_devtoken='S=s277:U=22334c5:E=142ec86fa19:C=13b94d5ce1a:P=1cd:A=en-devtoken:H=119a7854b74c7b28493feabbb7e71dde'
 
 " solarized Configure
-let g:solarized_bold=1
+let g:solarized_bold=0
 let g:solarized_underline=1
 let g:solarized_italic=1
 let g:solarized_contrast='high'
 let g:solarized_visibility='high'
-set background=dark
+set background=light
 
 " powerline configure
 " let g:Powerline_symbols = 'fancy'
@@ -99,7 +105,7 @@ let g:molokai_original = 1
 
 " ----------------------------------------------------
 " set colorscheme
-let scheme = 'solarized'
+let scheme = 'monokai'
 
 " colorsheme function cui gui
 augroup guicolorscheme
