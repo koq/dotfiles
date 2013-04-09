@@ -1,5 +1,7 @@
 " 基本設定
 " ---------------------------------------------------
+" change leader 
+let mapleader=","
 " vi との互換性OFF
 set nocompatible
 
@@ -78,6 +80,9 @@ Bundle 'kakkyz81/evervim'
 " scrooloose / syntastic
 Bundle 'scrooloose/syntastic'
 
+" stephpy/vim-php-cs-fixer
+Bundle 'stephpy/vim-php-cs-fixer'
+
 " ----------------------------------------------------
 " plugin configure
 
@@ -113,3 +118,16 @@ augroup guicolorscheme
     execute 'autocmd GUIEnter * colorscheme' scheme
     augroup END
    execute 'colorscheme' scheme
+
+" /php-cs-fixer
+let g:php_cs_fixer_path = "/usr/local/bin/php-cs-fixer" " define the path to the php-cs-fixer.phar
+let g:php_cs_fixer_level = "all"                " which level ?
+let g:php_cs_fixer_config = "default"           " configuration
+let g:php_cs_fixer_php_path = "php"             " Path to PHP
+let g:php_cs_fixer_fixers_list = ""             " List of fixers
+let g:php_cs_fixer_enable_default_mapping = 1   " Enable the mapping by default (<leader>pcd)
+let g:php_cs_fixer_dry_run = 0                  " Call command with dry-run option
+let g:php_cs_fixer_verbose = 0                  " Return the output of command if 1, else an inline information.
+
+nnoremap <silent><leader>pcd :call PhpCsFixerFixDirectory()<CR>
+nnoremap <silent><leader>pcf :call PhpCsFixerFixFile()<CR>

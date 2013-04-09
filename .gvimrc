@@ -54,8 +54,8 @@ set number
 set nobackup
 set visualbell t_vb=
 set nowrapscan
-set columns=200
-set lines=50
+set columns=250
+set lines=100
 
 "----------
 " カラースキーム
