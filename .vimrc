@@ -83,6 +83,8 @@ Bundle 'scrooloose/syntastic'
 " stephpy/vim-php-cs-fixer
 Bundle 'stephpy/vim-php-cs-fixer'
 
+" Zencoding.vim
+Bundle 'mattn/zencoding-vim'
 " ----------------------------------------------------
 " plugin configure
 
