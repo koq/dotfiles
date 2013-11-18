@@ -45,6 +45,16 @@ noremap : ;
 " テキスト整形オプション，マルチバイト系を追加
 set formatoptions=lmoq          
 
+" カーソルを自動的に()の中へ
+imap {} {}<Left>
+imap [] []<Left>
+imap () ()<Left>
+imap "" ""<Left>
+imap '' ''<Left>
+imap <> <><Left>
+imap // //<left>
+imap /// ///<left>
+
 " ----------------------------------------------------
 " vundle installed plugin
 
@@ -85,6 +95,9 @@ Bundle 'stephpy/vim-php-cs-fixer'
 
 " Zencoding.vim
 Bundle 'mattn/zencoding-vim'
+
+" smarty.vim
+Bundle 'vim-scripts/smarty.vim'
 " ----------------------------------------------------
 " plugin configure
 
