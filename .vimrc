@@ -98,6 +98,9 @@ Bundle 'mattn/zencoding-vim'
 
 " smarty.vim
 Bundle 'vim-scripts/smarty.vim'
+
+" PHP5.4にも対応している新しいPHPのシンタックスハイライト
+Bundle 'shawncplus/php.vim'
 " ----------------------------------------------------
 " plugin configure
 
@@ -146,3 +149,4 @@ let g:php_cs_fixer_verbose = 0                  " Return the output of command i
 
 nnoremap <silent><leader>pcd :call PhpCsFixerFixDirectory()<CR>
 nnoremap <silent><leader>pcf :call PhpCsFixerFixFile()<CR>
+

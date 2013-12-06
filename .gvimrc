@@ -17,7 +17,7 @@ set nocompatible
 "set directory=$HOME/vimbackup
  
 "タブの代わりに空白文字を指定する
-set expandtab
+"set expandtab
  
 "変更中のファイルでも、保存しないで他のファイルを表示する
 "set hidden
