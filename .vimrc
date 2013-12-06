@@ -52,8 +52,8 @@ imap () ()<Left>
 imap "" ""<Left>
 imap '' ''<Left>
 imap <> <><Left>
-imap // //<left>
-imap /// ///<left>
+"imap // //<left>
+"imap /// ///<left>
 
 " ----------------------------------------------------
 " vundle installed plugin
