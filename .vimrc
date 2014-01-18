@@ -99,8 +99,17 @@ Bundle 'mattn/zencoding-vim'
 " smarty.vim
 Bundle 'vim-scripts/smarty.vim'
 
+" javascript indent
+Bundle "pangloss/vim-javascript"
+
+" javascript indent
+"Bundle "jiangmiao/simple-javascript-indenter"
+
+"javascript syntax highlight
+Bundle 'JavaScript-syntax'
+
 " PHP5.4にも対応している新しいPHPのシンタックスハイライト
-Bundle 'shawncplus/php.vim'
+"Bundle 'shawncplus/php.vim'
 " ----------------------------------------------------
 " plugin configure
 
